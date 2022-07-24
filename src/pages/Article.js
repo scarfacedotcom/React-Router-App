@@ -23,7 +23,7 @@ export default function Article() {
         {isPending && <div>Loading...</div> }
         { error && <div>{error}</div> }
         { article && (
-          <div>
+          <div key={article.id}>
             <h2>{article.title}</h2>
             <p>By {article.author}</p>
             <p>{article.body}</p>
