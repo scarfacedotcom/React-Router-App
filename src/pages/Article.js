@@ -24,7 +24,7 @@ export default function Article() {
         { error && <div>{error}</div> }
         { article && (
           <div key={article.id}>
-            <h2>{article.title}</h2>
+            <h2>Title: {article.title}</h2>
             <p>By {article.author}</p>
             <p>{article.body}</p>
           </div>
