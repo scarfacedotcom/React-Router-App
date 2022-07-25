@@ -13,7 +13,7 @@ export default function Article() {
     if(error) {
       setTimeout(() => {
         navigate("/")
-      }, 1500)
+      }, 2000)
     }
   }, [error, navigate])
 
